@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Tiltschoolst::Application.load_tasks
+Tiltschools::Application.load_tasks
