@@ -16,15 +16,15 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    %style
-      == body { width: 900px; margin: auto; background-color: darkblue; padding: 12px; }
-      == a img { border: none; }
-      == #content { background-color: white; }
-      == .header { text-align: center; }
   %body
     #content
       .header
         = link_to(image_tag("tilt_logo.jpg"), root_path)
+
+        %p.navigation
+          = link_to("Home", root_path)
+          = link_to("Articles", articles_path)
+          = link_to("Get Involved", contact_path)
 
       = yield
 

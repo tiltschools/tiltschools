@@ -1,0 +1,61 @@
+$blue = #10365F
+$green = #006668
+$darkgreen = darken($green, 10%)
+$lightgreen = lighten($green, 10%)
+
+
+@mixin border-radius
+  -webkit-border-radius: 4px 4px
+  -moz-border-radius: 4px / 4px
+  border-radius: 4px / 4px
+
+@mixin horizontal-gradient($from, $to)
+  background: -webkit-gradient(linear, 0% 0%, 60% 0%, from($from), to($to))
+  background: -moz-linear-gradient(0% 0% 0deg, $from, $to, $to 100%)
+
+body
+  width: 960px
+  margin: auto
+  background-color: $blue
+  padding: 0
+
+a
+  img
+    border: none
+
+#content
+  background-color: white
+  padding: 12px 30px 120px 30px
+  overflow: hidden
+
+.header
+  text-align: center
+  .navigation
+    background-color: $green
+    text-align: center
+    width: 456px
+    margin: auto
+    +border-radius
+    overflow: hidden
+    a
+      border-right: 1px solid $darkgreen
+      border-left: 1px solid $lightgreen
+      padding: 12px 0
+      width: 150px
+      margin: 0
+      color: white
+      text-decoration: none
+      display: block
+      float: left
+
+.top_message
+  text-align: center
+
+.left_half, .right_half
+  width: 438px
+  float: left
+
+.right_half
+  float: right
+
+
