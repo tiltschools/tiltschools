@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.0.rc2'
+
+gem 'haml', '3.0.17'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -28,3 +30,12 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development do
+  gem 'heroku'
+  gem 'hpricot'
+end
+
+group :development, :test do
+   gem 'rspec-rails', '2.0.0.beta.20'
+end
