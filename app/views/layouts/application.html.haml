@@ -22,9 +22,9 @@
         = link_to(image_tag("tilt_logo.jpg"), root_path)
 
         %p.navigation
-          = link_to("Home", root_path)
+          = link_to("Home", root_path, :style => "border-left: none;")
           = link_to("Articles", articles_path)
-          = link_to("Get Involved", contact_path)
+          = link_to("Get Involved", contact_path, :style => "border-right: none;")
 
       = yield
 
