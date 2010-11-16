@@ -20,6 +20,9 @@
     #content
       .header
         = link_to(image_tag("tilt_logo.jpg"), root_path)
+        .follow
+          = link_to(image_tag("twitter_icon.jpg"), "http://twitter.com/tiltschools", :target => "_blank")
+          = link_to(image_tag("facebook_icon.jpg"), "http://www.facebook.com/pages/TILT-Schools/146148865432546", :target => "_blank")
 
         %p.navigation
           = link_to("Home", root_path, :style => "border-left: none;")
