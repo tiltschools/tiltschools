@@ -1,6 +1,7 @@
 Tiltschools::Application.routes.draw do
   root :to => "home#index"
   match '/contact', :to => "home#contact"
+  match '/goals', :to => "home#goals"
 
   resources :articles
   

@@ -3,6 +3,8 @@ class HomeController < ApplicationController
   end
 
   def contact
+  end
 
+  def goals
   end
 end
